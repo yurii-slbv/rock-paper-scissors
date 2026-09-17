@@ -7,11 +7,11 @@ from data import choices
 
 # Gets and validates the player's choice
 def get_player_choice():
-    player_choice = input("Choose rock, paper, or scissors: ").lower()
+    player_choice = input("Choose rock, paper, or scissors: ").strip().lower()
 
     while player_choice not in choices:
         print("Invalid choice. Try again.")
-        player_choice = input("Choose rock, paper, or scissors: ").lower()
+        player_choice = input("Choose rock, paper, or scissors: ").strip().lower()
 
     return player_choice
 
