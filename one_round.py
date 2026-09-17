@@ -11,7 +11,7 @@ def get_player_choice():
 
     while player_choice not in choices:
         print("Invalid choice. Try again.")
-        player_choice = input("Choose rock, paper, or scissors: ").strip().lower()
+        player_choice = input("Choose rock, paper, or scissors: ").strip.lower()
 
     return player_choice
 
